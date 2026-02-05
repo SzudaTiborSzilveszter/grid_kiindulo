@@ -1,0 +1,75 @@
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+header, footer{
+    flex: 0 0 100%;
+    order: 0;
+}
+
+nav{
+    flex: 0 0 20%;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(65, 65, 65);
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-flex;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+li:hover{
+    background-color: rgb(100, 50, 50);
+}
+
+a:hover{
+    color: blue;
+}
+
+aside{
+    flex: 0 0 20%;
+}
+
+article{
+    flex: 0 0 55%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+}
+
+.cikk{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    flex: 0 1 calc(50% - 4px);
+}
+
+.cikk p{
+    flex: 1 0 auto;
+}
+
+.kep{
+    order: -1;
+}
+
+@media only screen and (max-width: 600px){
+    aside{
+        flex: 1 1 100%;
+    }
+    article{
+        flex: 1 1 100%;
+    }
+}

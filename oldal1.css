@@ -1,0 +1,47 @@
+nav{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-flex;
+}
+
+a{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+li:hover{
+    background-color: purple;
+}
+
+a:hover{
+    color: green;
+}
+
+article{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.cikk{
+    display: flex;
+    flex-direction: column;
+    min-width: 200px;
+    flex: 0 1 calc(33.33% - 4px);
+    height: 100%;
+}
+
+.cikk p{
+    flex: 1 0 auto;
+}
